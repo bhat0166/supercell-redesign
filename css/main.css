@@ -1,0 +1,437 @@
+/* css reset code start from here*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* css rest code end's here */
+
+/* box sizing border box start */
+* {
+    box-sizing: border-box;
+}
+
+
+/* box sizing border box end here */
+
+
+/* .wrapper{
+    margin-left:3%;
+    margin-right: 3%;
+} */
+header{
+    overflow: auto;
+    position: sticky;
+    top: 0;
+   z-index: 100;
+}
+.navigation-bar {
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    background-color: #000;
+}
+
+.supercell-logo {
+    padding-left: 20px;
+    width: 140px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 22px;
+    color: white;
+    padding: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icons {
+    margin-left: auto;
+}
+
+.icons img {
+    width: 60px;
+    height: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.conatiner-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.troops {
+    width: 100%;
+    height: 100%;
+}
+
+.heading h1 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.heading p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.heading {
+    flex: 2;
+    /* margin: auto; */
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+/* drop down button starts here */
+
+h2 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.more-games {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    background-color: #FA91FF;
+    color: wheat;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.dropdown {
+    height: auto;
+    position: absolute;
+    background-color: white;
+    width: 120px;
+    display: none;
+    border-radius: 5%;
+}
+
+.dropdown a {
+    color: black;
+    display: block;
+    padding-top: 20px;
+    padding-left: 10px;
+    line-height: 1.5;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.dropdown a:hover{
+    color: #FA91FF;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #000;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.more-games:hover .dropdown {
+    display: block;
+}
+
+
+/* drop down button ends here */
+
+hr {
+    opacity: 50%;
+    background-color: gold;
+    height: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* grid use */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Create two columns */
+    grid-template-rows: repeat(2, 1fr);
+    /* Create two rows */
+    grid-gap: 10px;
+    object-fit: contain;
+    padding: 20px;
+    width: 85%;
+    margin: auto;
+
+
+}
+
+
+.cards h4 {
+    color: palevioletred;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cards p {
+    font-weight: 400;
+    text-transform: uppercase;
+    /* margin-top: 18px; */
+    text-align: center;
+}
+
+.cards img {
+    margin: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* hover effect */
+.crd-1:hover{
+    filter: blur(0);
+}
+/* hover effect end here */
+
+.crd-1 {
+    width: 95%;
+    filter: blur(1px) grayscale(2);
+}
+
+.crd-2 {
+    width: 95%;
+}
+
+.crd-3 {
+    width: 95%;
+}
+
+/* hover effect */
+
+.crd-4:hover{
+    filter: blur(0);
+}
+/* hover effect end here */
+
+.crd-4 {
+    width: 95%;
+    filter: blur(1px) grayscale(2);
+}
+
+.crd-4 img {
+    object-fit: cover;
+}
+
+
+/* footer image */
+
+.footer {
+    width: 90%;
+    height: auto;
+    background: linear-gradient(to bottom, #9FC33E, #000);
+    /* Gradient background */
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.footer img{
+   
+    width: 40%;
+    filter: grayscale(0.3);
+    transition: transform 1.5s ease;
+}
+
+.footer p {
+    font-weight: 600;
+    font-size: 36px;
+    
+}
+
+.footer p:hover{
+    color: wheat;
+    transform: scale(1);
+    transition:ease-out 1s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.footer p:hover + .goblin{
+    transform: scale(1.1);
+    filter: grayscale(0);
+    transition:0.3s ease-in-out 0.8s;
+    
+}
+
+.footer p:not(:hover) {
+    transition: transform 5s ease-in-out; /* New transition for scaling back to normal */
+  
+}
+
+
+
+/* .crd-1 img{
+    margin:5px;
+    max-width:100%;
+    max-height: 100%;
+} */
+
+/* .crd-1{
+   width: 800px;
+   height: 300px;
+   padding-left: 20px;
+}
+
+.cards img {
+    border-radius: 3%;
+} */
+
+/* .crd-1-info h4{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.crd-1-info p{
+    font-size: 18px;
+} */
